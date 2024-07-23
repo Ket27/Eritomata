@@ -1,0 +1,75 @@
+.Posting-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.Posting-Container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.Posting-Type {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Posting-Type span a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Posting-Type span {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Posting-Type span:hover {
+    background-color: #f0f0f0;
+}
+
+.Posting-Type svg {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .Posting-Container {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Posting-Container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .Posting-Type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Posting-Type span {
+        margin-bottom: 10px;
+        width: 80%;
+        justify-content: center;
+    }
+}

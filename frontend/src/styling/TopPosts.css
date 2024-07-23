@@ -1,0 +1,7 @@
+.TopPosts-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin : 40px;
+}

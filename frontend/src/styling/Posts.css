@@ -1,0 +1,28 @@
+.Posts-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .Posts-Container {
+        width: 90vw;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Posts-Container {
+        width: 95vw;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}

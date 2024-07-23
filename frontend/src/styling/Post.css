@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.post-container {
+  flex: 0 0 800px;
+  max-width: 800px;
+  height: 85vh;
+  overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.post {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post-meta {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.post-author, .post-date {
+  margin: 0;
+}
+
+.post-author{
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .post-container {
+    flex: 0 0 100%;
+    padding: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
